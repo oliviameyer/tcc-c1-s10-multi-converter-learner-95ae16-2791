@@ -1,5 +1,5 @@
 // EUR to CHF = EUR * 1.1
-    function chfEur(euros) {
+    function eurotochf(euros) {
     return euros * 1.1;
     }
     
@@ -45,11 +45,11 @@
     
     
     if(conversionType == "euros") {
-        resultMessage += chfEur(Number(conversionValue)).toString;
+        resultMessage += eurotochf(Number(conversionValue)).toString();
     } else if (conversionType == "celsius"){
-        resultMessage += celsiusFarenheit(Number(conversionValue)).toString;
+        resultMessage += celsiusFarenheit(Number(conversionValue)).toString();
     } else if (conversionType == "liters"){
-        resultMessage += litersGallon(Number(conversionValue)).toString;
+        resultMessage += litersGallon(Number(conversionValue)).toString();
     } else {
         resultMessage = "Sorry I can not answer";
     }
