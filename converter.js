@@ -15,7 +15,7 @@
     
  
     // Do you want to convert?
-    function display() {
+    function askConvert() {
     var answer = window.prompt("Do you need to convert? (yes/no)");
     if (answer == "yes"){
     return true;
@@ -38,7 +38,7 @@
     
     // Main
     // COntinue 
-    while(askContinue()){
+    while(askConvert()){
     var conversionType = whatConversion();
     var conversionValue = inputValue();
     var resultMessage = "The result is ";
